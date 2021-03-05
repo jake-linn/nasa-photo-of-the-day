@@ -1,14 +1,20 @@
 import React from 'react';
+import styled from 'styled-components';
 
+const StyledTitle = styled.div `
+font-size: 25px;
+font-family: courier new;
+
+`
 
 
 
 const Title = (props) => {
 
     return (
-<div>
+<StyledTitle>
 <p> {props.title}</p>
-</div>
+</StyledTitle>
 
     )
 

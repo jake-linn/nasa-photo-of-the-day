@@ -1,6 +1,19 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import Title from './Title';
+import styled from 'styled-components';
+
+
+const StyledExplaination = styled.p `
+font-family: courier new;
+
+`
+
+
+
+
+
+
 
 const Photo = () => {
     const [photo, setPhoto] = useState ({});
@@ -20,7 +33,7 @@ const Photo = () => {
             <div>
                 <Title title = {photo.title} />
                 <img src = {photo.url} alt = ''/>
-        <p>{photo.explanation}</p>
+        <StyledExplaination> {photo.explanation}</StyledExplaination>
             </div>
         )
     }
